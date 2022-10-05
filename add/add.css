@@ -1,0 +1,117 @@
+* {
+  --body-background:#508991;
+  --body-color:#172A3A;
+  --main-color:#74B3CE;
+  --main-background:#004346;
+  --text-color:#09BC8A;
+  --white-wash:#edffec;
+  --white:#fff;
+  outline: none;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  background: var(--main-background);
+  color: var(--body-color);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.main-body {
+  width: 70%;
+  min-height: 400px;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  margin: 2em;
+  background: var(--white-wash);
+  position: relative;
+}
+
+.main-nav {
+  position: absolute;
+  top: 4%;
+  left: 30%;
+  width: 100%;
+  padding: 1em;
+  padding-left: 2em;
+  transform: translate(-50%, -50%);
+  height: 30px;
+}
+.main-nav .go-back {
+  padding: 0.5em;
+  background: var(--body-background);
+  border: none;
+  border-radius: 5px;
+  text-decoration:none;
+  color: var(--white-wash);
+}
+.main-nav .go-back:hover {
+  box-shadow: 0px 0px 0px 2px var(--main-color);
+}
+
+.add {
+  position: relative;
+}
+.add .div-header {
+  color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.add-div > div {
+  width: calc(90% - 0.5em);
+  padding: 0.5em;
+}
+.add-div > div > input {
+  width: calc(100% - 0.2em);
+  padding: 0.4em;
+  border: 1px solid var(--body-color);
+}
+.add-div > div > input:focus {
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 2px;
+  border: 1px solid transparent;
+}
+.add-div label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.add-div #submit-div-add {
+  position: absolute;
+  bottom: -50%;
+  right: calc(0% + 0.5em);
+}
+.add-div #submit-div-add input {
+  color: var(--body-color);
+  background: var(--white);
+  box-shadow: var(--body-color) 0px 0px 0px 1px;
+}
+.add-div #submit-div-add input:hover {
+  color: var(--white);
+  background: var(--body-color);
+  box-shadow: var(--white) 0px 0px 0px 1px;
+}
+
+@media (max-width: 600px) {
+  .main-nav {
+    padding: 1em;
+    padding-left: 2em;
+  }
+}/*# sourceMappingURL=add.css.map */
